@@ -1,0 +1,113 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.ecrit{
+    color: gold;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
+#light {
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#dark {
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    background-color: rgb(31, 72, 105);
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    position: relative;
+}
+
+.box {
+    width: 1067px;
+    height: 100px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    border-style: initial;
+    margin-top: 465px;
+    margin-left: 120px;
+    
+  }
+
+  .box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #fd029d, #f04a17, #00ff2a, grey, darkblue, red, white);
+  width: 100%;
+  height: 100%;
+  transform: scale(1.02);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 20s infinite;
+  
+
+}
+
+.box::after {
+    filter: blur(100px);
+  }
+
+  @keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 300% 0; }
+  100% { background-position: 0 0; }
+}
+
+#button{
+    margin-left: 94%;
+    background-color: rgba(3, 143, 143, 0.555);
+}
+
+.donald{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top : 60px;
+    left: 140px;
+}
+
+.space{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top : 60px;
+    left: 900px;
+}
+
+.presentation{
+    background-color: grey;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    top: 60px;
+    left : 535px;
+    opacity: 70%;
+
+}
+
